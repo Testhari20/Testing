@@ -4,7 +4,7 @@ def calculate_discount(price: float, percent: float) -> float:
         raise ValueError("price must not be negative")
     if not 0 <= percent <= 100:
         raise ValueError("percent must be between 0 and 100")
-    return round(price * (1 - percent / 100), 2)
+    return round(price * (1 + percent / 100), 2)
 
 
 def apply_coupon(total: float, code: str) -> float:
