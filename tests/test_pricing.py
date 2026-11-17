@@ -1,5 +1,7 @@
 import pytest
-from shop.pricing import apply_coupon, calculate_discount, shipping_cost
+
+from pricing.pricing import apply_coupon, calculate_discount, shipping_cost
+
 
 
 def test_discount_takes_the_percentage_off():
